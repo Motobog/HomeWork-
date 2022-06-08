@@ -23,7 +23,7 @@ num3 = Convert.ToDouble(Console.ReadLine());
 max = num1;
 if (num2 > max) max = num2;
 if (num3 > max) max = num3;
-Console.WriteLine("Max is: " + max);*/
+Console.WriteLine("Max is: " + max);
 //Task3
 int num;
 Console.Write("Input nature number: ");
@@ -35,4 +35,21 @@ Console.WriteLine("Number is even");
 else
 {
 Console.WriteLine("Number is odd");
+}*/
+//Task4
+int num, counter = 2;
+Console.Write("Input any nature number: ");
+num = Convert.ToInt32(Console.ReadLine());
+if (num < 2)
+{
+    Console.WriteLine("There is no nature number divisible by 2 between 0 and " + num);
 }
+else
+{
+    while(counter<=num)
+    {
+      Console.Write(counter +" ");
+      counter+=2;
+    }
+}
+Console.WriteLine();
