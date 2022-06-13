@@ -12,5 +12,5 @@
 
 Console.Write("Input 5 digigtal number: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if ( number > 99999 || number < -99999 || number > -10000 && number < 10000) Console.WriteLine("Input correct number!");
+if (number > 99999 || number < -99999 || number > -10000 && number < 10000) Console.WriteLine("Input correct number!");
 else Console.WriteLine(PalCheck(number));
