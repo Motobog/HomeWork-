@@ -15,7 +15,7 @@
 }
 IntSec();*/
 //Task2_Method1
-void ThreeDigFromLeft()
+/*void ThreeDigFromLeft()
 {
     int num, count, degree;//degree = 3 Количество разрядов для числа variable, если число положительное и состоит из 3 знаков 
     Console.Write("Method 1. Input thee or more digit number: ");
@@ -70,4 +70,17 @@ void ThreeDigitFromTheLeft()
     while (num > 999) num /= 10; //Приводим число к 3 значному виду
     Console.WriteLine($"Third number from the left is {Math.Truncate(num) % 10}");
 }
-ThreeDigitFromTheLeft();
+ThreeDigitFromTheLeft();*/
+//Task3
+void HolidayCheck(int num)
+{
+    if (num < 1 || num > 7) Console.WriteLine("Input correct number");
+    else
+    {
+        if (num == 6 || num == 7) Console.WriteLine("It's a Holiday");
+        else Console.WriteLine("It's not a holiday");
+    }
+}
+Console.Write("Enter the number of the day of the week: ");
+int number = Convert.ToInt32(Console.ReadLine());
+HolidayCheck(number);
